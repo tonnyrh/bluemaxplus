@@ -118,7 +118,6 @@ You can enable cheats or features by using a poke to address `30` before running
 
 ## Credits
 
-- **Tonny Roger Holm - dotBtty**: Developer of this mod (2024 v10.0).
 - **Texelec**: For providing the SNES adapter.
 - **The 8-Bit Guy**: For inspiration and PETSCII Robots.
 - **Robin from 8-Bit Show and Tell**: For inspiration.

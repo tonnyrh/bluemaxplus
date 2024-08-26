@@ -61,8 +61,11 @@ You can enable cheats or features by using a poke to address `30` before running
 6. Type:
 
 Cd G:\My Drive\C64\C64projects\BlueMax\bluemax\v10
+
 Load "bluemaxorg.prg" 0
+
 w $D016
+
 X
 
 7. "Run" in vice. This starts monitor again.
@@ -73,16 +76,27 @@ bload "Soundmem1" 0 $788a
 bload "Soundmem2" 0 $797c
 
 bload "Soundmem3" 0 $7a90
+
 Bload "Intercept Functionkey v2" 0 $5d41
+
 bload "Intercept joystick inflight" 0 5934
+
 bload "Intercept bomb drop" 0 63d7
+
 Bload "intercept xmovement" 0 $5a04
+
 Bload "Intercept in Menu" 0 $7173
+
 Bload "Intercept in Game" 0 $4617
+
 Bload "Intercept exit pause" 0 $438e
+
 Bload "Intercept enter pause v2" 0 $5d94 
+
 Bload "Intercept bullet xmovement" 0 $6540
+
 Bload "Replace Text Startscreen" 0 $7339
+
 
 Delete
 X

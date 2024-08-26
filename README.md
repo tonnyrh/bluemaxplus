@@ -52,7 +52,43 @@ You can enable cheats or features by using a poke to address `30` before running
 - `Poke 30,14`: Enables all cheats + disables bomb drop when Down + Fire.
 - `Poke 30,17`: Disables all extra functions.
 
-## Building Instructions
+### Quick Build (windows):
+1. Get all files from this respository in a folder (example G:\My Drive\C64\C64projects\BlueMax\bluemax\v10)
+2. Install Vice 32 bit
+3. Get hold of original Bluemax and name it bluemaxorg.prg and store it in the folder
+4. Start Vice
+5. Start Vice monitor Alt+H
+6. Type:
+
+Cd G:\My Drive\C64\C64projects\BlueMax\bluemax\v10
+Load "bluemaxorg.prg" 0
+w $D016
+X
+
+7. "Run" in vice. This starts monitor again.
+8. Type:
+bload "Soundmem1" 0 $788a
+bload "Soundmem2" 0 $797c
+bload "Soundmem3" 0 $7a90
+Bload "Intercept Functionkey v2" 0 $5d41
+bload "Intercept joystick inflight" 0 5934
+bload "Intercept bomb drop" 0 63d7
+Bload "intercept xmovement" 0 $5a04
+Bload "Intercept in Menu" 0 $7173
+Bload "Intercept in Game" 0 $4617
+Bload "Intercept exit pause" 0 $438e
+Bload "Intercept enter pause v2" 0 $5d94 
+Bload "Intercept bullet xmovement" 0 $6540
+Bload "Replace Text Startscreen" 0 $7339
+
+Delete
+X
+
+9. Enjoy
+
+
+
+## Building Instructions (complete)
 
 1. **Set Up C64Studio**: Copy this code into C64Studio.
 2. **Configure VICE Emulator**: Set up the VICE 32-bit emulator as a debugger tool in C64Studio.

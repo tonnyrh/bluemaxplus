@@ -67,8 +67,11 @@ X
 
 7. "Run" in vice. This starts monitor again.
 8. Type:
+
 bload "Soundmem1" 0 $788a
+
 bload "Soundmem2" 0 $797c
+
 bload "Soundmem3" 0 $7a90
 Bload "Intercept Functionkey v2" 0 $5d41
 bload "Intercept joystick inflight" 0 5934

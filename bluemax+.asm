@@ -1,4 +1,4 @@
-!to "bluemax+.prg", cbm
+!to "bluemaxmod.prg", cbm
 ; By Tonny Roger Holm - dotBtty 2024 v10.0
 
 ; This program makes the SNES PETSCII robot interface work on Bluemax for Commodore 64 by merging original code with modified.
@@ -666,12 +666,17 @@ PRINT_FUNCTIONKEY:
     JMP $AB1E             ; Call the ROM routine to print the string
     RTS
 textf:
-    !text "FUNCTIONKEY:", 0
-
+    !text "SNESTOFKEY :", 0
+    
 
 display_snes_new:
 
+    ;Reset to Joystick mode.
+    ;lda #$00
+    ;sta $DC02       ; Set all bits to input for Joystick 1
+    ;sta $DC03       ; Set all bits to input for Joystick 2
 
+    
     JSR $E566             ; Home the cursor using ROM routine
     
     JSR PRINT_HEADER
@@ -702,7 +707,7 @@ PRINT_HEADER:
     JMP $AB1E             ; Call the ROM routine to print the string
     RTS
 text0:
-    !text "BITS       :12345678", 0
+    !text "TESTMODE   :01234567:RUNSTOP TO ESCAPE", 0
 
 PRINT_SNES_LOW:
     LDA #<text1  ; Load the low byte of the address of the text string

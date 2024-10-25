@@ -82,8 +82,10 @@ You can enable cheats or features by using a poke to address `30` before running
     Bload "Intercept bullet xmovement" 0 $6540
     Bload "Replace Text Startscreen" 0 $7339
     ```
-9. Delete X.
-10. Enjoy.
+9. Delete
+10. X
+
+Enjoy!
 
 ## Building Instructions (Complete)
 
